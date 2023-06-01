@@ -58,12 +58,9 @@ namespace Lastmart.WebApi.Controllers
                 }
 
                 return new OkResult();
-            }, _ =>
+            }, _ => new JsonResult(BaseErrorResponse.ServerErrorResponse())
             {
-                return new JsonResult(BaseErrorResponse.ServerErrorResponse())
-                {
-                    StatusCode = 500
-                };
+                StatusCode = 500
             });
         }
 
