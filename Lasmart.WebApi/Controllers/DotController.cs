@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Lasmart.Services.Interfaces;
 using Lastmart.Domain.Exceptions;
 using Lastmart.Domain.Requests.Dot;
